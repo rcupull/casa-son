@@ -1,0 +1,21 @@
+{
+  "name": "casa-son",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Web>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>": "",
+    "start:client": "cd ./web && pnpm start",
+    "<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Backend>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>": "",
+    "start:server": "cd ./back && pnpm start",
+    "<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Both>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>": "",
+    "start": "env-cmd -e start concurrently \"pnpm start:client\" \"pnpm start:server\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "env-cmd": "^10.1.0"
+  }
+}

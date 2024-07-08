@@ -1,10 +1,12 @@
-
-
+import { useAuth } from 'features/api-slices/useAuth';
+import { useEffect } from 'react';
 
 export const Home = () => {
- 
+  const { authSignIn } = useAuth();
 
-  return (
-    'Home'
-  );
+  useEffect(() => {
+    authSignIn.fetch({ email: 'caca', password: 'mas caca' });
+  }, []);
+
+  return <>{authSignIn.data.message}</>;
 };
